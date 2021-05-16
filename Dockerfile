@@ -1,4 +1,4 @@
-# Download and install Matlab Compiler Runtime v9.3 (2017b)
+# Download and install Matlab Compiler Runtime v9.10 (2021a)
 #
 # This docker file will configure an environment into which the Matlab compiler
 # runtime will be installed and in which stand-alone matlab routines (such as
@@ -31,5 +31,5 @@ RUN mkdir /mcr-install && \
     rm -rf mcr-install
 
 # Configure environment variables for MCR
-ENV LD_LIBRARY_PATH /opt/mcr/v93/runtime/glnxa64:/opt/mcr/v93/bin/glnxa64:/opt/mcr/v93/sys/os/glnxa64
-ENV XAPPLRESDIR /opt/mcr/v93/X11/app-defaults
+ENV LD_LIBRARY_PATH /opt/mcr/v910/runtime/glnxa64:/opt/mcr/v910/bin/glnxa64:/opt/mcr/v910/sys/os/glnxa64
+ENV XAPPLRESDIR /opt/mcr/v910/X11/app-defaults
