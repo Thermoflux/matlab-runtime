@@ -31,5 +31,5 @@ RUN mkdir /mcr-install && \
     rm -rf mcr-install
 
 # Configure environment variables for MCR
-ENV LD_LIBRARY_PATH /opt/mcr/v910/runtime/glnxa64:/opt/mcr/v910/bin/glnxa64:/opt/mcr/v910/sys/os/glnxa64
+ENV LD_LIBRARY_PATH /opt/mcr/v910/runtime/glnxa64:/opt/mcr/v910/bin/glnxa64:/opt/mcr/v910/sys/os/glnxa64:/opt/mcr/v910/extern/bin/glnxa64
 ENV XAPPLRESDIR /opt/mcr/v910/X11/app-defaults
