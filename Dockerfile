@@ -23,7 +23,7 @@ RUN apt-get -q update && \
 RUN mkdir /mcr-install && \
     mkdir /opt/mcr && \
     cd /mcr-install && \
-    wget -q https://ssd.mathworks.com/supportfiles/downloads/R2021a/Release/1/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2021a_Update_1_glnxa64.zip && \
+    wget -q http://ssd.mathworks.com/supportfiles/downloads/R2021a/Release/1/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2021a_Update_1_glnxa64.zip && \
     unzip -q MATLAB_Runtime_R2021a_Update_1_glnxa64.zip && \
     rm -f MATLAB_Runtime_R2021a_Update_1_glnxa64.zip && \
     ./install -destinationFolder /opt/mcr -agreeToLicense yes -mode silent && \
